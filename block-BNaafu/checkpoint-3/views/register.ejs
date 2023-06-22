@@ -1,0 +1,47 @@
+<% include partials/header%>
+
+<div class="mt-5 border border-rounded bg-warning-subtle mx-5 mb-4">
+  <h1 class="text-center mt-5 ">Registration-Form</h1>
+
+  <form class="mx-5 mt-5" action="/users/register" method="post">
+    <input
+      type="text"
+      name="name"
+      placeholder="Enter your name"
+      class="form-control mt-2"
+    />
+    <input
+      type="email"
+      name="email"
+      placeholder="Your email"
+      class="form-control mt-2"
+    />
+    <input
+      type="password"
+      name="password"
+      placeholder="Set password"
+      class="form-control mt-2"
+    />
+    <input
+      type="number"
+      name="age"
+      placeholder="Your age"
+      class="form-control mt-2"
+    />
+    <input
+      type="tel"
+      name="phone"
+      placeholder="Enter your phone number"
+      class="form-control mt-2"
+    />
+    <input
+      type="text"
+      name="country"
+      placeholder="Select your country"
+      class="form-control mt-2"
+    />
+    <div class="text-center mt-2 mb-2">
+      <button class="btn btn-success">Sign-Up</button>
+    </div>
+  </form>
+</div>
