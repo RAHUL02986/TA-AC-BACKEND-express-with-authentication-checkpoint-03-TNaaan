@@ -1,0 +1,35 @@
+<%include partials/header%>
+
+<main class="">
+  <div>
+    <h1 class="text-center mt-5">Add Income</h1>
+    <section class="mt-5 mx-5">
+      <form class="mx-5 mt-4" action="/client/income" method="POST">
+        <input type="text" placeholder="Income Name" name="incname"
+        class="form-control mt-2 />
+        <input
+          type="text"
+          placeholder="Source"
+          name="sources"
+          class="form-control mt-2"
+        />
+        <input
+          type="number"
+          placeholder="Amount"
+          name="amount"
+          class="form-control mt-2"
+        />
+        <input type="date" name="date" class=" mt-2 form-control />
+        <input type="number" value="Add Income" class="" />
+        <div class="text-center mt-3">
+          <a class="" href="/client/statementList">
+            <button class="btn btn-success">See all recored's</button>
+          </a>
+          <a class="mx-3" href="">
+            <button class="btn btn-warning">Add Income</button>
+          </a>
+        </div>
+      </form>
+    </section>
+  </div>
+</main>

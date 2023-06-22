@@ -1,0 +1,39 @@
+<%- include('./partials/header.ejs')%>
+
+<main class="text-center">
+  <div>
+    <section class="rounded-lg">
+      <h1 class="mt-5">Add Expense</h1>
+      <form class="mx-5 mt-5" action="/client/expense" method="POST">
+        <input
+          class="form-control mt-3"
+          type="text"
+          name="expname"
+          placeholder="Enter Expense Name"
+        />
+        <input
+          class="form-control mt-3"
+          type="text"
+          placeholder="Category"
+          name="category"
+        />
+        <input
+          class="form-control mt-3"
+          type="number"
+          placeholder="Amount"
+          name="amount"
+        />
+        <input class="form-control mt-3" type="date" name="date" />
+
+        <div class=" text-center  mt-3">
+          <a href="">
+            <button class="btn btn-warning text-center">Add Expense</button>
+          </a>
+          <a class="mx-4" href="/client/statementList">
+            <button class="btn btn-success">See all recored's</button>
+          </a>
+        </div>
+      </form>
+    </section>
+  </div>
+</main>
