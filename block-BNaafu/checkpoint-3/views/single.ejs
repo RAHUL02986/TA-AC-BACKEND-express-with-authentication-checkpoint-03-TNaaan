@@ -1,0 +1,23 @@
+<% include partials/header%>
+    
+    <main>
+        <div class="container" >
+           
+            <div class="justify-between">
+                <h2 class="text-center mt-5" >Welcome You 
+                    <span class="text-warning">
+                    <%=user.name%></span>
+                 </h2>
+                <div class="text-center mt-5">
+                    <a  href="/client/income/new"><button class="btn btn-info">Add Incomes</button></a>
+                    <a  href="/client/expense/new"><button class="btn btn-success">Add Expenses</button></a>
+                    <a  href="/client/statementList"><button class="btn btn-warning">View All Records</button></a>
+                </div>
+           
+            </div>
+                
+        </div>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<% include partials/header%>
+<div class="mx-5 mt-5 border border-rounded bg-warning-subtle">
+  <h2 class="text-center mt-4">Login-Form</h2>
+  <form class="mx-5" action="/users/login" method="post">
+    <input
+      type="email"
+      class="form-control mt-3"
+      name="email"
+      placeholder="Enter Email"
+    />
+    <input
+      type="password"
+      class="form-control mt-3"
+      name="password"
+      placeholder="Enter password"
+    />
+    <div class="text-center">
+      <button class="btn btn-success mt-3 mb-3">Login</button>
+    </div>
+  </form>
+</div>
